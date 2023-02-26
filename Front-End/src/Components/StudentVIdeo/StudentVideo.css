@@ -1,0 +1,83 @@
+.studentsec {
+  height: 380px;
+  background: var(--Dark-color);
+  align-items: center;
+  align-content: center;
+  padding: 80px;
+}
+
+.studentsec > .wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.studentbox {
+  text-align: center;
+  flex-direction: column;
+}
+
+.studentbox > h1 {
+  font-size: 40px;
+  color: var(--white);
+  font-weight: 900;
+}
+
+.studentbox > h2 {
+  font-size: 40px;
+  color: var(--white);
+  font-weight: 700;
+  font-family: "Alegreya";
+  font-size: 30px;
+}
+
+.studentbox > img {
+  align-self: center;
+  justify-content: center;
+}
+
+.studentbox > h1 {
+  align-self: center;
+  justify-content: center;
+}
+
+.studentsec > .wrapper::before {
+  top: 0px;
+  left: -20px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: "";
+  width: 88px;
+  height: 60px;
+  border-top: 8px solid var(--red);
+  border-left: 8px solid var(--red);
+}
+
+@media (max-width: 375px) {
+  .studentsec > .wrapper {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .studentsec {
+    height: 573px;
+  }
+
+  .studentbox > h1 {
+    font-size: 32px;
+  }
+
+  .studentbox > h2 {
+    font-size: 24px;
+  }
+
+  .studentsec > .wrapper::before {
+    top: -30px;
+    left: -30px;
+  }
+}

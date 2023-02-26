@@ -1,0 +1,171 @@
+.postPage {
+  height: 551px;
+  background-color: #ff6864;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0px;
+}
+
+.postPage > .wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
+.postPage > .wrapper > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  position: relative;
+  color: #ffffff;
+}
+
+.postPage > .wrapper > h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  position: absolute;
+  background: #ffca28;
+  bottom: 0;
+  left: 0;
+}
+
+.postboxflex {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.postbox {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 10px;
+  width: 314px;
+  height: 239px;
+  position: relative;
+  transition: all 400ms ease;
+}
+.postbox:hover {
+  transform: scale(1.1);
+}
+
+.postbox > img {
+  display: flex;
+  flex-direction: column;
+  width: 314px;
+  height: 159px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.postbox > p {
+  font-family: "legreya";
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 12px;
+}
+
+.postPage > .wrapper > button {
+  padding: 4px 32px;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 32px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.postbox > button {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  padding: 0px 16px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  z-index: 3;
+}
+
+/* tablete */
+
+@media (max-width: 1024px) {
+  .postPage > .wrapper {
+    max-width: 754px;
+  }
+
+  .postboxflex {
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-items: center;
+  }
+  .postboxflex > .postbox:nth-last-of-type(1) > img {
+    width: 714px;
+    height: 159px;
+  }
+  .postPage {
+    height: 796px;
+  }
+
+  .postbox:nth-last-of-type(1) {
+    width: 714px;
+    height: 215px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 375px) {
+  .postPage > .wrapper {
+    max-width: 311px;
+    align-items: center;
+  }
+
+  .postboxflex {
+    grid-template-columns: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .postPage {
+    height: 1024px;
+  }
+  .postbox {
+    width: 311px;
+  }
+  .postbox > img {
+    width: 311px;
+  }
+
+  .postbox:nth-last-of-type(1) {
+    width: 314px;
+    height: 239px;
+  }
+  .postboxflex > .postbox:nth-last-of-type(1) > img {
+    width: 314px;
+    height: 159px;
+  }
+  .postPage > .wrapper > button {
+    margin-bottom: -30px;
+  }
+}

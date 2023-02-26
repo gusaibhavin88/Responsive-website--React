@@ -1,0 +1,186 @@
+header {
+  height: 100vh;
+  background-image: url("../../assets/Rectangle8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+.wrapper {
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 1024px;
+  height: 80px;
+  padding: 32px;
+  justify-content: space-between;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+  z-index: 300;
+}
+
+.nav > a > h4 {
+  color: var(--white);
+}
+.nav > a > h4 > span {
+  color: var(--red);
+}
+
+a {
+  text-decoration: none;
+}
+
+.learnbox {
+  display: flex;
+  flex-direction: row;
+}
+.learnbox > li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.learnbox > li > a {
+  color: var(--white);
+}
+
+.lbox {
+  width: 453px;
+  height: 326px;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  border-width: 4px 4px 0px 4px;
+  border-style: solid;
+  border-color: #ffffff;
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px 20px 0px 0px;
+  right: 0px;
+  padding: 50px 40px;
+  justify-content: center;
+}
+.lbox > h4 {
+  color: white;
+  position: relative;
+}
+
+.lbox > h4::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #e63946;
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+
+.lbox > h1 {
+  color: white;
+  font-family: "Alegreya";
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+.demo-btn {
+  padding: 10px 32px;
+  background: #e63946;
+  border-radius: 10px;
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+  margin-top: 35px;
+}
+
+.menuicon {
+  display: none;
+}
+
+.flotnav {
+  width: 350px;
+  height: 200px;
+  background-color: var(--Dark-color);
+  z-index: 600;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-100%);
+  transition: all 800ms cubic-bezier(0.3, 0.96, 0.59, 0.95);
+}
+
+.flotnav.active {
+  transform: translateY(0);
+}
+
+.flotnav > img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.flotnav > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 10px;
+  color: var(--white);
+}
+
+.flotnav > ul > li > a {
+  color: var(--white);
+}
+
+/* Tablete */
+
+@media (max-width: 1024px) {
+  .nav {
+    max-width: 754px;
+  }
+
+  .lbox {
+    width: 326px;
+    height: 356px;
+  }
+  header {
+    height: 981px;
+  }
+  .menuicon {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 375px) {
+  .nav {
+    max-width: 311px;
+  }
+
+  .lbox {
+    width: 311px;
+    height: 281px;
+  }
+  .nav > ul {
+    display: none;
+  }
+  header {
+    height: 812px;
+  }
+  .lbox > h1 {
+    font-size: 32px;
+  }
+  .menuicon {
+    display: block;
+  }
+}

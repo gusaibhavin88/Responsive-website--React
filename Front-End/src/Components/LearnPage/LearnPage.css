@@ -1,0 +1,89 @@
+.section {
+  background: var(--Dark-color2);
+  height: 567px;
+}
+.section > .wrapper > h1 {
+  font-size: 40px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  position: relative;
+}
+.section > .wrapper {
+  display: block;
+  flex-direction: column;
+  padding: 80px 0px;
+}
+
+.section > .wrapper > .changecombo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.section > .wrapper > .changecombo > img {
+  width: 558px;
+  height: 287px;
+}
+
+.section > .wrapper > .changecombo > ul > li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Alegreya";
+  color: var(--white);
+  position: relative;
+}
+
+.changecombo > ul > li::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 30%;
+  width: 10px;
+  border-radius: 50px;
+  height: 10px;
+  background: #e63946;
+}
+
+.section > .wrapper > h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #e63946;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+}
+
+@media (max-width: 1024px) {
+  .section > .wrapper > .changecombo > img {
+    width: 385px;
+    height: 287px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section > .wrapper {
+    max-width: 250px;
+  }
+
+  .section > .wrapper > .changecombo > img {
+    display: none;
+  }
+  .section > .wrapper > h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .section {
+    height: 487px;
+  }
+} ;
