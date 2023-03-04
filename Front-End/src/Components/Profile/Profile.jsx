@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Profile.css";
-import Rectangle18 from "../../assets/Rectangle19.png";
 import { client } from "../client";
 import { urlFor } from "../client";
 

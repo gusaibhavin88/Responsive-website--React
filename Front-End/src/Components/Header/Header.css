@@ -35,9 +35,22 @@ header {
   color: var(--red);
 }
 
-a {
+a{
   text-decoration: none;
+
 }
+
+li>a{
+  text-decoration: none;
+  
+}
+
+li>a:hover {
+  text-decoration-line: underline;
+  text-decoration-color:var(--red);
+  text-decoration-thickness: 3px;
+}
+
 
 .learnbox {
   display: flex;
@@ -101,6 +114,11 @@ a {
   border: none;
   font-size: 16px;
   margin-top: 35px;
+  transition: all 400ms ease;
+}
+
+.demo-btn:hover {
+  transform: scale(1.1);
 }
 
 .menuicon {

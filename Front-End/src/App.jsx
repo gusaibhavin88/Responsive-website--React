@@ -3,7 +3,7 @@ import {
   Footer,
   Header,
   LearnPage,
-  Posts,
+  Feeds,
   StudentVideo,
   Profile,
 } from "./Components/Index";
@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <LearnPage />
       <StudentVideo />
-      <Posts />
+      <Feeds />
       <Profile />
       <Footer />
     </>

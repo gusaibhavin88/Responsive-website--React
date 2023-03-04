@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Rectangle13 from "../../assets/Rectangle13.png";
-import "./Posts.css";
+import "./Feeds.css";
 import "../../index.css";
 import { client, urlFor } from "../client";
 
-const Posts = () => {
+const Feeds = () => {
   const [post, setpost] = useState([]);
 
   useEffect(() => {
@@ -15,7 +14,7 @@ const Posts = () => {
   });
 
   return (
-    <section id="posts" className="postPage">
+    <section id="posts" className="postpage">
       <div className="wrapper">
         <h1>Latest Posts</h1>
         <div className="postboxflex">
@@ -33,4 +32,4 @@ const Posts = () => {
   );
 };
 
-export default Posts;
+export default Feeds;
