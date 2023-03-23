@@ -32,10 +32,10 @@ const Header = () => {
           <img src={cross} onClick={() => setisActive(false)} alt="" />
           <ul>
             <li>
-              <a href="#learnpage">About</a>
-              <a href="#studentvideo">Course Details</a>
-              <a href="#posts">Blog</a>
-              <a href="#profile">Testimonials</a>
+              <a href="#learnpage" onClick={() => setisActive(false)}>About</a>
+              <a href="#studentvideo" onClick={() => setisActive(false)}>Course Details</a>
+              <a href="#posts" onClick={() => setisActive(false)}>Blog</a>
+              <a href="#profile" onClick={() => setisActive(false)}>Testimonials</a>
             </li>
           </ul>
         </div>

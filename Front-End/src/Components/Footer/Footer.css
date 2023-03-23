@@ -78,7 +78,7 @@
   margin-left: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .footer {
     height: 476px;
   }
@@ -91,4 +91,3 @@
     gap: 40px;
   }
 }
-

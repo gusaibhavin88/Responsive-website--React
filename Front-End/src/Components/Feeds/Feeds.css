@@ -146,7 +146,7 @@
 
 /* Mobile */
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .postpage > .wrapper {
     max-width: 311px;
     align-items: center;

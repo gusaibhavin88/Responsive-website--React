@@ -58,7 +58,7 @@
   border-left: 8px solid var(--red);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .studentsec > .wrapper {
     max-width: 300px;
     display: flex;
